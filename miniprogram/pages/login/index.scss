@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@import "../../style/common.scss";
+page {
+  height:100%;
+}
+.login {
+  height:100%;
+  padding: p2r(32px);
+  .login-icon-warn {
+    width: p2r(110px);
+    height: p2r(110px);
+    margin: p2r(40px) 0;
+  }
+  .login-icon-title {
+    color: #333333;
+    font-weight: bolder;
+    @include font-dpr(36px);
+  }
+  .warn-desc {
+    margin: p2r(72px) 0;
+    line-height: p2r(46px);
+    color: #333333;
+    @include font-dpr(32px);
+  }
+  .login-button {
+    width: p2r(400px);
+  }
+}

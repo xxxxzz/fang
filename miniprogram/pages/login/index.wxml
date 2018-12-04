@@ -1,0 +1,6 @@
+<view class="container login"  wx:if="{{!isAuth}}">
+  <image src="../../images/login_icon_warning.png" class="login-icon-warn"></image>
+  <view class="login-icon-title">登录提示</view>
+  <view class="warn-desc">为了您更好的体验，请点击下方按钮授权登陆。</view>
+  <button class="login-button" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登陆</button>
+</view>

@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+  <!--  头部用户信息  -->
+  <view class="userinfo">
+    <image class="head-portrait" src="{{userInfo.avatarUrl}}"></image>
+    <view class="post-name">
+      <view class="user-name">{{userInfo.nickName}}</view>
+      <view class="user-post">{{userInfo.gender === 1 ? '男' : '女'}}</view>
+    </view>
+  </view>
+  <!--  用户信息链接  -->
+  <view class="info-link">
+    <view class="item-user-link" wx:for="{{infoLinkList}}" bindtap="pageJump"
+        data-link="{{item.pageLink}}" wx:key="index">
+      <view class="link-container">
+        <view class="link-left">
+          <image class="info-icon" src="{{item.iconUrl}}"></image>
+          <text>{{item.infoName}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

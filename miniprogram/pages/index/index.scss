@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import "../../style/common.scss";
+.fang-index {
+  .list {
+    padding: p2r(32px) p2r(20px);
+    .item {
+      height: p2r(200px);
+      margin-bottom: p2r(30px);
+      padding: p2r(20px);
+      border: p2r(1px) solid #eee;
+      box-sizing: border-box;
+      display: flex;
+      .l {
+        width: p2r(160px);
+        height: p2r(160px);
+        margin-right: p2r(50px);
+        .image {
+          width: 100%;
+          height: 100%;
+          background-color: red;
+          border-radius: p2r(10px);
+        }
+      }
+      .r {
+        max-width: p2r(400px);
+        @include font-dpr(28px);
+        .title {
+          margin-bottom: p2r(30px);
+          font-weight: bolder;
+          color: #333;
+          @include font-dpr(32px);
+        }
+        .desc {
+          line-height: p2r(40px);
+          color: #999;
+          @include linesEllipsis(2);
+        }
+      }
+    }
+    .empty {
+
+    }
+  }
+}

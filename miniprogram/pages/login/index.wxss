@@ -1,0 +1,40 @@
+.clear::after {
+  content: ".";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  height: 0; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.border-box {
+  box-sizing: border-box; }
+
+page {
+  height: 100%; }
+
+.login {
+  height: 100%;
+  padding: 32rpx; }
+  .login .login-icon-warn {
+    width: 110rpx;
+    height: 110rpx;
+    margin: 40rpx 0; }
+  .login .login-icon-title {
+    color: #333333;
+    font-weight: bolder;
+    font-size: 36rpx; }
+  .login .warn-desc {
+    margin: 72rpx 0;
+    line-height: 46rpx;
+    color: #333333;
+    font-size: 32rpx; }
+  .login .login-button {
+    width: 400rpx; }
+
+/*# sourceMappingURL=index.wxss.map */

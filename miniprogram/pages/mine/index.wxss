@@ -1,0 +1,50 @@
+.container .userinfo {
+  display: flex;
+  width: 100%;
+  height: 250rpx;
+  align-items: center;
+  padding-left: 35rpx;
+  background-color: #6699dd; }
+  .container .userinfo .head-portrait {
+    width: 152rpx;
+    height: 152rpx;
+    border-radius: 50%; }
+  .container .userinfo .post-name {
+    margin-left: 32rpx;
+    line-height: 54rpx;
+    font-weight: bold;
+    color: #fff; }
+    .container .userinfo .post-name .user-name {
+      font-size: 36rpx; }
+    .container .userinfo .post-name .user-post {
+      font-size: 32rpx; }
+.container .info-link {
+  width: 100%; }
+  .container .info-link .item-user-link {
+    width: 100%;
+    height: 110rpx;
+    padding-left: 32rpx;
+    font-size: 32rpx;
+    color: #333; }
+    .container .info-link .item-user-link .link-container {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee; }
+    .container .info-link .item-user-link .link-left {
+      display: flex;
+      align-items: center; }
+    .container .info-link .item-user-link .info-icon {
+      width: 32rpx;
+      height: 32rpx;
+      margin-right: 20rpx; }
+    .container .info-link .item-user-link .arrow-icon {
+      width: 16rpx;
+      height: 28rpx;
+      margin-right: 60rpx; }
+    .container .info-link .item-user-link.active-link {
+      background-color: #f2f2f2; }
+
+/*# sourceMappingURL=index.wxss.map */
