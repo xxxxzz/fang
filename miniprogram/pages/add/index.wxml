@@ -1,0 +1,28 @@
+<view class="form">
+  <view class="s-input">
+    <view class="s-label s-required">标题</view>
+    <view class="s-value">
+      <input class="form-input" type="text" bindinput="changeTitle"/>
+    </view>
+  </view>
+  <view class="s-input">
+    <view class="s-label s-required">logo</view>
+    <view class="s-value" style="border: none">
+      <image src="{{url}}" mode="aspectFit" class="logo"></image>
+      <button type="primary" size="mini" bindtap="uploadImage">上传</button>
+    </view>
+  </view>
+  <view class="s-input">
+    <view class="s-label s-required">正文</view>
+    <view class="s-value">
+      <textarea class="form-textarea" maxlength="{{-1}}" bindinput="changeDesc" />
+    </view>
+  </view>
+  <view class="s-input" style="margin-top: 100rpx">
+    <view class="s-label"></view>
+    <view class="s-value" style="border: none">
+      <button type="primary" size="mini" bindtap="save">提交</button>
+      <button size="mini" bindtap="cancel">取消</button>
+    </view>
+  </view>
+</view>

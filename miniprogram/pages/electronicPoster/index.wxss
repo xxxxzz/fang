@@ -1,0 +1,53 @@
+.clear::after {
+  content: ".";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  height: 0; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.border-box {
+  box-sizing: border-box; }
+
+.fang-index .list {
+  padding: 32rpx 20rpx; }
+  .fang-index .list .item {
+    height: 200rpx;
+    margin-bottom: 30rpx;
+    padding: 20rpx;
+    border: 1rpx solid #eee;
+    box-sizing: border-box;
+    display: flex; }
+    .fang-index .list .item .l {
+      width: 160rpx;
+      height: 160rpx;
+      margin-right: 50rpx; }
+      .fang-index .list .item .l .image {
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        border-radius: 10rpx; }
+    .fang-index .list .item .r {
+      max-width: 400rpx;
+      font-size: 28rpx; }
+      .fang-index .list .item .r .title {
+        margin-bottom: 30rpx;
+        font-weight: bolder;
+        color: #333;
+        font-size: 32rpx; }
+      .fang-index .list .item .r .desc {
+        line-height: 40rpx;
+        color: #999;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical; }
+
+/*# sourceMappingURL=index.wxss.map */

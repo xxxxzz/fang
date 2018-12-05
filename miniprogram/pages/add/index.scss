@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import "../../style/common.scss";
+.form {
+  padding: p2r(50px);
+  .s-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: p2r(50px);
+    .s-label {
+      width: p2r(100px);
+      margin-right: p2r(32px);
+      color: #999999;
+      @include font-dpr(30px);
+    }
+    .s-required {
+      &::after {
+        content: "*";
+        color: red;
+      }
+    }
+    .s-value {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      border: p2r(1px) solid #d7d7d7;
+      @include font-dpr(28px);
+      .form-input {
+        height: p2r(60px);
+        padding: p2r(10px);
+        box-sizing: border-box;
+        color: #333;
+      }
+      .form-textarea {
+        width: 100%;
+        height: p2r(250px);
+        padding: p2r(20px);
+        box-sizing: border-box;
+      }
+      .logo {
+        width: p2r(200px);
+        height: p2r(200px);
+        border: p2r(1px) solid #ddd;
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@ const app = getApp();
 
 Page( {
     data: {
-      list: [],
+      list: null,
       pageSize: 10,
       pageNumber: 1,
       total: 0
@@ -18,6 +18,9 @@ Page( {
       })
     },
     query() {
+      wx.showLoading({
+        title: "加载中"
+      });
       wx.cloud.callFunction({
         name: "query",
         data: {
@@ -30,7 +33,8 @@ Page( {
         this.setData({
           list: data,
           total: total
-        })
+        });
+        wx.hideLoading();
       })
     },
     onReachBottom() {

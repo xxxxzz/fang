@@ -1,0 +1,16 @@
+<view class="fang-index">
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="{{index}}">
+      <view class="l">
+        <image class="image" src="{{item.url}}"></image>
+      </view>
+      <view class="r">
+        <view class="title">{{item.title}}</view>
+        <view class="desc">{{item.desc}}</view>
+      </view>
+    </view>
+    <view class="empty" wx:if="{{list.length === 0}}">
+      暂无查询到数据
+    </view>
+  </view>
+</view>

@@ -1,0 +1,53 @@
+.clear::after {
+  content: ".";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  height: 0; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.border-box {
+  box-sizing: border-box; }
+
+.form {
+  padding: 50rpx; }
+  .form .s-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50rpx; }
+    .form .s-input .s-label {
+      width: 100rpx;
+      margin-right: 32rpx;
+      color: #999999;
+      font-size: 30rpx; }
+    .form .s-input .s-required::after {
+      content: "*";
+      color: red; }
+    .form .s-input .s-value {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      border: 1rpx solid #d7d7d7;
+      font-size: 28rpx; }
+      .form .s-input .s-value .form-input {
+        height: 60rpx;
+        padding: 10rpx;
+        box-sizing: border-box;
+        color: #333; }
+      .form .s-input .s-value .form-textarea {
+        width: 100%;
+        height: 250rpx;
+        padding: 20rpx;
+        box-sizing: border-box; }
+      .form .s-input .s-value .logo {
+        width: 200rpx;
+        height: 200rpx;
+        border: 1rpx solid #ddd; }
+
+/*# sourceMappingURL=index.wxss.map */

@@ -8,11 +8,11 @@ Page({
 			{
 				infoName: '新建文章',
 				iconUrl: '../../images/porfile_entrance_icon_code.png',
-				pageLink: 'pages/mine/extensionCode/index'
+				pageLink: '/pages/add/index'
 			},{
 				infoName: '个人海报',
 				iconUrl: '../../images/porfile_entrance_icon_poster.png',
-				pageLink: '/pages/mine/electronicPoster/index'
+				pageLink: '/pages/electronicPoster/index'
 			}
 	  ],
       userInfo: {}
@@ -21,7 +21,6 @@ Page({
     	this.setData({
           userInfo: app.globalData.user
 		});
-    	console.log(this.data.userInfo)
     },
 	// 信息页跳转
 	pageJump (e) {

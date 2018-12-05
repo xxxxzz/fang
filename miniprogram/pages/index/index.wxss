@@ -31,7 +31,6 @@
       .fang-index .list .item .l .image {
         width: 100%;
         height: 100%;
-        background-color: red;
         border-radius: 10rpx; }
     .fang-index .list .item .r {
       max-width: 400rpx;
