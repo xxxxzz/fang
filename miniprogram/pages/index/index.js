@@ -14,10 +14,8 @@ Page( {
         name: "login"
       }).then(res=>{
         Object.assign(app.globalData.user,res.result);
-      })
-    },
-    onShow() {
-      this.query();
+      });
+	  this.query();
     },
     query() {
       wx.showLoading({
