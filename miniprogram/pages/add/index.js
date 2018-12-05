@@ -34,6 +34,9 @@ Page( {
     },
     save() {
         if (this.check()){
+          wx.showLoading({
+            title: '数据正在写入中'
+          });
           wx.cloud.uploadFile({
             cloudPath: "-",
             filePath: this.data.url
@@ -47,15 +50,9 @@ Page( {
               }
             }).then(res=>{
               if (res.result._id) {
-                wx.showLoading({
-                  title: '数据正在写入中',
-                  duration: 2000,
-                  success: function () {
-                    wx.switchTab({
-                      url: "/pages/index/index"
-                    })
-                  }
-                });
+                wx.switchTab({
+                  url: "/pages/index/index"
+                })
               }
             })
           })

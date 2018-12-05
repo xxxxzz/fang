@@ -9,13 +9,15 @@ Page( {
       pageNumber: 1,
       total: 0
     },
-    onLoad (options) {
+    onLoad () {
       wx.cloud.callFunction({
         name: "login"
       }).then(res=>{
         Object.assign(app.globalData.user,res.result);
-        this.query();
       })
+    },
+    onShow() {
+      this.query();
     },
     query() {
       wx.showLoading({

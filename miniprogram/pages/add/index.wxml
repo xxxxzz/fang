@@ -8,7 +8,7 @@
   <view class="s-input">
     <view class="s-label s-required">logo</view>
     <view class="s-value" style="border: none">
-      <image src="{{url}}" mode="aspectFit" class="logo"></image>
+      <image src="{{url}}" class="logo"></image>
       <button type="primary" size="mini" bindtap="uploadImage">上传</button>
     </view>
   </view>
