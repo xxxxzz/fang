@@ -9,10 +9,10 @@ const queryCollection = db.collection("queryList");
 
 // 云函数入口函数
 exports.main = async (event, context) => {
-  let { title,url,desc} = event;
+  let { title,url,desc,imageName} = event;
   try {
     return await queryCollection.add({
-      data: {title,url,desc}
+      data: {title,url,desc,imageName}
     })
   } catch (e) {
     console.log(e)

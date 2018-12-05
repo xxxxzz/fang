@@ -34,17 +34,19 @@ Page( {
     },
     save() {
         if (this.check()){
+          let imageName = `file-${Date.now()}`;
           wx.showLoading({
-            title: '数据正在写入中'
+            title: '数据写入中'
           });
           wx.cloud.uploadFile({
-            cloudPath: "-",
+            cloudPath: imageName,
             filePath: this.data.url
           }).then(res=>{
             wx.cloud.callFunction({
               name: "add",
               data: {
                 title: this.data.title,
+                imageName: imageName,
                 url: res.fileID,
                 desc: this.data.desc
               }
