@@ -15,6 +15,11 @@
 .border-box {
   box-sizing: border-box; }
 
+.fang-index .count {
+  margin-top: 30rpx;
+  text-align: center;
+  color: #999999;
+  font-size: 30rpx; }
 .fang-index .list {
   padding: 32rpx 20rpx; }
   .fang-index .list .item {

@@ -1,6 +1,12 @@
 @charset "UTF-8";
 @import "../../style/common.scss";
 .fang-index {
+  .count {
+    margin-top: p2r(30px);
+    text-align: center;
+    color: #999999;
+    @include font-dpr(30px)
+  }
   .list {
     padding: p2r(32px) p2r(20px);
     .item {

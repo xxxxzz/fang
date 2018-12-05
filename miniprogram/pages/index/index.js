@@ -4,7 +4,7 @@ const app = getApp();
 
 Page( {
     data: {
-      list: null,
+      list: [],
       pageSize: 10,
       pageNumber: 1,
       total: 0
@@ -30,10 +30,12 @@ Page( {
           pageNumber: this.data.pageNumber
         }
       }).then(res=>{
-        let data=  res.result.data.data,
+        let tp = this.data.list,
+            data=  res.result.data.data,
             total = res.result.total.total;
+        tp = tp.concat(data);
         this.setData({
-          list: data,
+          list: tp,
           total: total
         });
         wx.hideLoading();
@@ -43,7 +45,7 @@ Page( {
       let total = this.data.total,
           len = this.data.list.length,
           pageNumber = ++this.data.pageNumber;
-      if (total < len) {
+      if (total > len) {
         this.setData({
           pageNumber: pageNumber
         },()=>{
